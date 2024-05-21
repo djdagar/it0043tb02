@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            max-width: 1280pxpx;
+        }
+        .card {
+            background-image: url(https://i.pinimg.com/564x/ea/1d/5b/ea1d5bb4dc48f7bf0ac30e8596687be7.jpg);
+            background-size: cover;
+            width: 400px;
+            height: 600px;
+            border: 10px yellow;
+            border-style: groove;
+            box-shadow: 5px 5px 5px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .content {
+            text-align: center;
+            color: white;
+            background-color: teal;
+            border-radius: 1rem;
+            width: 100%;
+            padding: 10px;
+            font-style: courier;
+            
+        }
+        .content1 {
+            background-color: blue;
+        }
+        .content2 {
+            background-color: #997950;
+        }
+        .content3 {
+            background-color: pink;
+        }
+        .content4 {
+            background-color: violet;
+        }
+        .content5 {
+            background-color: orange;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: gray;
+            color: white;
+            border-radius: 1rem;
+            margin: 5px 0;
+        }
+        .pic2 {
+            width: 85%;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .type {
+            text-align: left;
+        }
+        .type1, .type2 {
+            text-align: center;
+        }
+        .desc {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/143.png" alt="Snorlax" class="pic2">
+            <div class="content">
+                <h1 class="name"><b>SNORLAX</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Snorlax</p>
+                <p class="type2">Type 2: Munchlax</p>
+                <p class="desc">Snorlax (Japanese: カビゴン Kabigon) is a Normal-type Pokémon introduced in Generation I.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png" alt="Blastoise" class="pic2">
+            <div class="content content1">
+                <h1 class="name"><b>Blastoise</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Water</p>
+                <p class="desc">Blastoise (カメックス, Kamekkusu?, trans. Kamekkusu) (BLAS-toyce[1]) is a Water-type Pokémon introduced in Generation I.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/015.png" alt="Beedrill" class="pic2">
+            <div class="content content2">
+                <h1 class="name"><b>Bee Drill</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Bug</p>
+                <p class="type2">Type 2: Poison</p>
+                <p class="desc">Beedrill (スピアー, Spear?, trans. Spear) (BEE-dril[1]) is a Bug/Poison-type Pokémon introduced in Generation I.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/035.png" alt="Clefairy" class="pic2">
+            <div class="content content3">
+                <h1 class="name"><b>Clefairy</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Fairy</p>
+                <p class="desc">Clefairy (ピッピ, Pippi?, trans. Pippi) (cluh-FAIR-ee[1]) is a Fairy-type Pokémon introduced in Generation I.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/023.png" alt="Ekans" class="pic2">
+            <div class="content content4">
+                <h1 class="name"><b>Ekans</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Poison</p>
+                <p class="desc">Ekansアーボ (Aabo, Aabo?) (ECK-kins[1]) is a Poison-type Pokémon introduced in Generation I.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/037.png" alt="Vulpix" class="pic2">
+            <div class="content content5">
+                <h1 class="name"><b>Vulpix</b></h1>
+                <p class="type">Type:</p>
+                <p class="type1">Type 1: Fire</p>
+                <p class="desc">Vulpix (ロコン, Rokon?, trans. Rokon) (VULL-picks[1]) is a Fire-type Pokémon introduced in Generation I. It has an Ice-type Alolan Form introduced in Generation VII.</p>
+                <button>Add Pokemon</button>
+                <button>Release Pokemon</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
