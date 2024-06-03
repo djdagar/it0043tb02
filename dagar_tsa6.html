@@ -9,74 +9,105 @@
             margin: 0;
             box-sizing: 0;
         }
+        
         #container{
-            width: ;
+            width: 1520px;
             margin: 50px auto;
             padding: 10px;
             outline: 8px solid black;
             display: grid;
             grid-template-columns: auto auto auto auto;
             grid-template-rows: auto auto auto auto;
+            background-image: url(" https://i.pinimg.com/originals/ef/11/d4/ef11d4b653a9f15f4159def3bd4292ab.jpg");
         }
         .item{
             outline: 2px solid black;
             justify-content: center;
             text-align: center;
-            padding: 2px;
+            padding: 15px;
             margin: 7px;
             border-radius: 7px;
-            gap: 5px;
-
+           
         }
+        
         #A{  
-            grid-column-start:1;
+            grid-column-start: 1 ;
             grid-column-end: 3;
-            grid-row: 1/2;
+       
+            background-color: #10b4b5;
         }
 
         #B{
             grid-column-start: 3;
             grid-column-end: 4;
-            grid-row: 1/2;
+            background-color: #8db262;
         }
 
         #C{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row 
-
+            grid-row: 2/-1;
+            background-color: #113834;
+            color: white;
+    
         }
 
         #D{ 
-            grid-column-start: ;
+            grid-column: span 2 ;
+            grid-row: 2/-1;
+            background-color: #3ca82e;
+         
         }
 
         #E{
-            grid-column: ;
+            grid-row: span 4;
+            background-color: #7b4d34;
+        
+            align-content: center;
         }
 
-        #F{
-            grid-row: 1;
-            grid-column-end: 1/5;
-            
-        }
-
-    
-        h2{
-
-        }
         img{
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
         }
+        
         p{
             text-align: justify; 
             font-size: medium;
             font-family: 'Courier New', Courier, monospace;
             padding: 10px;
         }
+        
         @media(max-width: 800px){
+        .item{
+            width: 600px;
+            object-position: center;
+            border-radius: 7px;
+            margin-bottom: 20px;
+        }
+        #A{  
+            grid-row: 1;
+            background-color: #10b4b5;
+        }
 
+        #B{
+            grid-row: 2;
+            background-color:  #8db262;
+        }
+
+        #C{
+            background-color:  #113834;
+            color: white;
+            grid-row: 3;
+        }
+
+        #D{ 
+            background-color: #3ca82e;
+            grid-row: 4;
+        }
+
+        #E{
+            background-color: #7b4d34;
+            grid-row: 5;
+        }
         }
 
     </style>
@@ -85,36 +116,30 @@
 <body>
     <div id = "container">
         <div id="A" class="item"> 
-            <img src="https://sm.ign.com/ign_me/cover/o/one-punch-/one-punch-man_4e93.jpg "> 
-            <h2> Saitama</h2>
-            <p> Saitama is an ordinary-looking bald man with brown eyes, a thin but well-built physique, and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen.</p>
+            <img src="https://i.pinimg.com/originals/b2/20/5c/b2205ce67c7f32f6c2051ad0df2419a0.png"> 
+            <h2> STEVE </h2>
+            <p>  Steve(mononymous)is the main protagonist to the popular sandbox game, Minecraft. Despite being one of the most iconic characters in video game culture, very little is known about him. He is one of two default playable characters; the other being Alex. According to theory, Steve is one of the last humans alive after a deadly virus rushed in, killing most, and turning the rest into bloodthirsty monsters, such as skeletons, zombies, husks, etc. It's up to him to save earth.</p>
         </div>
         <div id="B" class="item"> 
-            <img src=" https://images.immediate.co.uk/production/volatile/sites/3/2023/03/goku-dragon-ball-guru-824x490-11b2006-e1697471244240.jpg"> 
-            <h2> Goku</h2>
-            <p> Goku is introduced as an eccentric, monkey-tailed boy who practices martial arts and possesses superhuman strength. He meets Bulma and joins her on a journey to find the seven wish-granting Dragon Balls. Along the way, he finds new friends who follow him on his journey to become stronger.</p>
+            <img src="https://i.pinimg.com/564x/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg"> 
+            <h2> ALEX </h2>
+            <p>  Alex is the main and playable character on Minecraft along with her masculine equivalent, Steve. She was featured as a character in Super Smash Bros. Ultimate on October 1, 2020, and Minecraft Dungeons on May 26, 2020.</p>
         </div>
         <div id="C" class="item"> 
-            <img src=" https://miro.medium.com/v2/resize:fit:736/1*YqfVlyCe06DfcPsR3kpYrw.jpeg">
-            <h2> Luffy</h2> 
-            <p> Monkey D. Luffy, also known as 'Straw Hat Luffy', is the strongest combatant of the Straw Hat Pirates due to his fearless pursuit of the legendary treasure of the late Gol D. Roger. His strength is recognized by many, including his opponents, despite his age and appearance often leading to underestimation.</p>
+            <img src=" https://i.pinimg.com/564x/40/3b/ff/403bffd92f8c0ed7b1a364dea14ed6ca.jpg">
+            <h2> HEROBRINE </h2> 
+            <p> Herobrine is an urban legend and creepypasta from the video game Minecraft, originating from an anonymous post on the imageboard website 4chan in 2010. He is depicted as a version of the Minecraft character Steve, but with solid white eyes that lack pupils.</p>
         </div>
         <div id="D" class="item"> 
-            <img src=" https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png"> 
-            <h2> Doraemon </h2>
-            <p> Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita. An official birth certificate for the character gives him a birth date of 3 September 2112 and lists his city of residency as Kawasaki, Kanagawa, the city where the manga was created.</p>
+            <img src=" https://art.pixilart.com/b2c52c8e418893c.png"> 
+            <h2> CREEPER </h2>
+            <p> Creepers are the only mobs in-game that explode themselves and everything around them.</p>
         </div>
         <div id="E" class="item"> 
-            <img src=" https://assets-prd.ignimgs.com/2022/08/17/25-astro-boy-1660778366362.jpg"> 
-            <h2> Astroboy</h2>
-            <p> He is a little boy robot with special powers. He can fly, speak 60 languages, and detect whether a human being is good or bad. He is powered by an atomic reactor in his chest and has a computer for a brain. He fights to protect the world from people and robots who harm others.</p>
-        </div>
-        <div id="F" class="item"> 
-            <img src=" https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-sun-pokemon-moon/6/6d/Partnercappikachu.jpg"> 
-            <h2> Pikachu</h2>
-            <p> Pikachu is a small, chubby, and incredibly cute mouse-like Pokémon which is covered almost completely by yellow fur. It has long yellow ears that are tipped with black. A Pikachu's back has two brown stripes, and its large tail is notable for being shaped like a lightning bolt.</p>
+            <img src=" https://tr.rbxcdn.com/f7fa68d5828d5e6e5529b1f2d9b864db/420/420/Hat/Png"> 
+            <h2> VILLAGER </h2>
+            <p>Villagers are passive mobs that inhabit villages, work at their professions, breed, and interact with each other. Their outfit varies according to their occupation and biome. A player can trade with them using emeralds as currency.</p>
         </div>
     </div>
-    
 </body>
 </html>
