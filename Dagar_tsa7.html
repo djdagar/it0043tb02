@@ -1,37 +1,53 @@
+<!DOCTYPE html>
 <html>
-    <head> 
+<head> 
     <style>
-         *{
-             margin: 0%; 
-             padding: 0%; 
-             box-sizing: 0%;
-             
-         }
-        nav{
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://t3.ftcdn.net/jpg/06/24/57/04/240_F_624570451_wvTOh2Yc5jDs8E6peA6js8EEub94OF9T.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        nav {
             background-color: #111;
             height: 100px;
-            display: grid;
-            grid-row:1;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
         }
-        body{
-            background-image: url("https://t3.ftcdn.net/jpg/06/24/57/04/240_F_624570451_wvTOh2Yc5jDs8E6peA6js8EEub94OF9T.jpg");
+        .navinfo {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
         }
-        .content{
-            height: 50px;
+        .title {
+            display: flex;
+            align-items: center;
         }
-        .navinfo{
-            margin: 20px;
-            justify-content: space-between;
+        .title img {
+            height: 75px; 
+            margin-right: 10px;
+        }
+        .title p {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
         }
         ul {
             list-style-type: none;
+            display: flex;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: #333;  
         }
         li {
-            float: left;
+            margin-right: 20px;
         }
         li a {
             display: block;
@@ -41,136 +57,139 @@
             text-decoration: none;
         }
         li a:hover {
-            background-color: #111;
+            background-color: #333;
         }
-        
-        h1{
-            font-size: 70;
-            font-weight: bold;
-            text-align: center;
-        }
-        p{
-            color: white;
-            padding: 5px;
-        }
-        .main-container{
-        
-        }
-        .container1{
-            gap: 10px;
-            padding: 10px;
-            width: 48%;
-            margin: 20px;
-            height: 300px;
-            border-radius: 7px;
-            background-image: url(" https://i.pinimg.com/736x/6a/14/14/6a141411467345cc69232b06c277cb34.jpg");
-            background-image: contain;
-            background-repeat: no-repeat;
-        }
-        
-        .content-header{
-            margin: 0 auto;
-        }
-        
-        .mini-contents{
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            border: 3px white;
-            margin: 20px;
-            padding 10px;
-            background-color: #112340;
+        .main-container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "main sidebar"
+                "content sidebar";
+            grid-template-columns: 3fr 1fr;
             gap: 20px;
-            padding: 10px;
-            width: 45%;
+            padding: 20px;
         }
-        
-        .container2{
-            background-color: black;
-            margin: 20px;
-            height: auto;
-            align-self: end;
-            border-radius: 7px;
-            width: 46.5%;
-            padding: 10px;
+        .header {
+            grid-area: header;
             
         }
-        img{
-            height: 175px;
-            width: 225px;
+        .main {
+            grid-area: main;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 7px;
+            padding: 20px;
         }
-        .n{
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 7px;
+            padding: 20px;
+        }
+        .content {
+            grid-area: content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .content-item {
+            background-color: rgba(17, 35, 64, 0.9);
+            padding: 20px;
+            border-radius: 7px;
+        }
+        h1 {
+            font-size: 70px;
             font-weight: bold;
-            font-size: 25;
             text-align: center;
+            margin: 20px 0;
         }
-        
-        #c{
-            margin-top: 30px;
-            display: flex;
-            flex-direction: row;
+        p {
+            padding: 5px;
         }
-        
-        
+        img {
+            width: 100%;
+            height: 175px;
+            border-radius: 7px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
     </style>
-    </head>
-    <body>
-    <nav> 
+</head>
+<body>
+    <nav class="header"> 
         <div class="navinfo">
-        <div class="title"> 
-        <p class="n"> WORLD OF TANKS </p> 
-        </div> 
+            <div class="title"> 
+                <img src=" https://cdn.worldvectorlogo.com/logos/world-of-tanks.svg" alt="Logo">
+                <p>WORLD OF TANKS</p>
+            </div> 
         </div>
-        <ul class="content">
-            <li> <a href="#"> Home </a> </li>
-            <li> <a href="#"> Tanks </a> </li>
-            <li> <a href="#"> History </a> </li>
-            <li> <a href="#"> About Us </a> </li>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tanks</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
-<div class="main-container">
-    <div class="A" id="c">
-        <div class="container1"> 
+    <div class="main-container">
+        <div class="main">
+            <div class="container1"></div>
+            <div class="mini-contents">
+                <div class="content-item">
+                    <img src="https://www.globalautotransportation.com/wp-content/uploads/2020/01/42613957591_5ba5aff36e_w.jpg" alt="American Tank">
+                    <p><b>AMERICAN</b></p>
+                    <p>The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://i.redd.it/1o0zfsqdh15a1.jpg" alt="Russian Tank">
+                    <p><b>RUSSIAN</b></p>
+                    <p>The T-34 is a Soviet medium tank from World War II. When introduced, its 76.2 mm tank gun was more powerful than many of its contemporaries, and its 60-degree sloped armour provided good protection against anti-tank weapons.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uAZ_n0IbJLQ61CJFOsW63TyMREyOKt61WQ&s" alt="German Tank">
+                    <p><b>GERMAN</b></p>
+                    <p>The Tiger I was a German heavy tank of World War II that began operational duty in 1942 in Africa and in the Soviet Union, usually in independent heavy tank battalions. It gave the German Army its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun. 1,347 were built between August 1942 and August 1944.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="mini-contents"> 
-        
-        <div class="a" id="i"> 
-        <img src="https://www.globalautotransportation.com/wp-content/uploads/2020/01/42613957591_5ba5aff36e_w.jpg">
-        <p> <b> AMERICAN </b></p>
-        <p> The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers.</p>
+        <div class="sidebar">
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JrRMmmzwMYFT2EcQDGi-egXvVlplRbcfzA&s" alt="Leopard">
+                <p><b>LEOPARD</b> The Leopard 2 is a third-generation German main battle tank. Developed by Krauss-Maffei in the 1970s, the tank entered service in 1979 and replaced the earlier Leopard 1 as the main battle tank of the West German army.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqR8CpyLE3YDbEINOL1e_MiEPnMyXTKuKXw&s" alt="M60 Patton">
+                <p><b>M60 PATTON</b> The M60 is an American second-generation main battle tank. It was officially standardized as the Tank, Combat, Full Tracked: 105-mm Gun, M60 in March 1959. Although developed from the M48 Patton, the M60 tank series was never officially christened as a Patton tank.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8_eLmopVugd57Tkg0NbzwfUKAci0bcJ3Rw&s" alt="Maus">
+                <p><b>MAUS</b> Panzerkampfwagen VIII Maus was a German World War II super-heavy tank completed in July of 1944. It is the heaviest fully enclosed armored fighting vehicle ever built.</p>
+            </div>
         </div>
-        
-        <div class="b" id="i"> 
-        <img src="https://i.redd.it/1o0zfsqdh15a1.jpg ">
-        <p> <b>RUSSIAN</b> </p>
-        <p> The T-34 is a Soviet medium tank from World War II. When introduced, its 76.2 mm tank gun was more powerful than many of its contemporaries, and its 60-degree sloped armour provided good protection against anti-tank weapons.</p>
-        </div>
-        
-        <div class="c" id="i"> 
-        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uAZ_n0IbJLQ61CJFOsW63TyMREyOKt61WQ&s">
-        <p> <b> GERMAN  </b></p>
-        <p> The Tiger I was a German heavy tank of World War II that began operational duty in 1942 in Africa and in the Soviet Union, usually in independent heavy tank battalions. It gave the German Army its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun. 1,347 were built between August 1942 and August 1944. </p>
-        </div>
+        <div class="content">
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhJbM17vlqSn4FCA5xkdE565DmKmmihWnkQ&s" alt="Tank">
+                <p><b>M1 ABRAMS</b> The M1 Abrams is a third-generation American main battle tank designed by Chrysler Defense and named for General Creighton Abrams. Conceived for modern armored ground warfare, it is one of the heaviest tanks in service at nearly 73.6 short tons. </p>
+            </div>
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcS-oUkm3xByVQ51Ylp-GOqFcoCW50yackLw&s" alt="Tank">
+                <p><b>MATILDA II</b> The Infantry Tank Mark II, better known as the Matilda, is a British infantry tank of the Second World War. The design began as the A12 specification in 1936, as a gun-armed counterpart to the first British infantry tank, the machine gun armed, two-man A11 Infantry Tank Mark I.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmp2ps-fo0KsfUN_Y0tTP8mCbYtJkGT4w4lQ&s" alt="Tank">
+                <p><b>SHERMAN FIREFLY</b> The Sherman Firefly was a medium tank used by the United Kingdom and some armoured formations of other Allies in the Second World War. It was based on the US M4 Sherman but was fitted with the more powerful British 76.2 mm calibre 17-pounder anti-tank gun as its main weapon.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRkm-TKf7jpA2zlZLDbpvrSUpYuBeddVc93Q&s" alt="Tank">
+                <p><b>M26 PERSHING</b> The M26 Pershing is a heavy tank/medium tank formerly used by the United States Army. It was used in the last months of World War II during the Invasion of Germany and extensively during the Korean War.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://cdn.landmarkscout.com/wp-content/uploads/2023/03/m10-achilles-tank-destroyer-la-roche-2.jpg" alt="Tank">
+                <p><b>17pdr SP ACHILLES </b> The 17pdr SP Achilles (officially 17 pounder, Self-Propelled, Achilles) is a British variant of the American M10 tank destroyer armed with the British Ordnance QF 17-pounder high-velocity 76.2 mm (3-inch) anti-tank gun in place of the M10's considerably less powerful 3-inch (76.2 mm) Gun M7.</p>
+            </div>
+            <div class="content-item">
+                <img src="https://img1.cgtrader.com/items/3687769/6ed5f00264/large/british-mark-1-tank-ww1-3d-model-low-poly-obj-fbx-ma.jpg" alt="Tank">
+                <p><b>MARK 1</b> The Mark I was the world's first tank, a tracked, armed, and armoured vehicle, to enter combat. The name "tank" was initially a code name to maintain secrecy and disguise its true purpose. The tank was developed in 1915 to break the stalemate of trench warfare.</p>
+            </div>
         </div>
     </div>
-    <div class="B" id="c">
-        <div class="container2">
-            <div class="c-a">
-                <img src=" ">
-            <p> <b> LEOPARD </b> The Leopard 2 is a third generation German main battle tank. Developed by Krauss-Maffei in the 1970s, the tank entered service in 1979 and replaced the earlier Leopard 1 as the main battle tank of the West German army.</p>
-            </div>
-            <div class="c-b">
-                <img src=" ">
-            <p> <b>M60 PATTON</b> The M60 is an American second-generation main battle tank. It was officially standardized as the Tank, Combat, Full Tracked: 105-mm Gun, M60 in March 1959. Although developed from the M48 Patton, the M60 tank series was never officially christened as a Patton tank.</p>
-            </div>
-            <div class="c-c">
-                <img src=" ">
-            <p> <b> MAUS </b> Panzerkampfwagen VIII Maus was a German World War II super-heavy tank completed in July of 1944. It is the heaviest fully enclosed armored fighting vehicle ever built.</p>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
-    </body>
-  </html>
+</body>
+</html>
