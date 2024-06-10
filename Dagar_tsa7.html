@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+    <head> 
     <style>
-        *{margin: 0%; padding: 0%; box-sizing: 0%;}
+         *{
+             margin: 0%; 
+             padding: 0%; 
+             box-sizing: 0%;
+             
+         }
         nav{
             background-color: #111;
-            height: 80px;
+            height: 100px;
+            display: grid;
+            grid-row:1;
         }
         body{
             background-image: url("https://t3.ftcdn.net/jpg/06/24/57/04/240_F_624570451_wvTOh2Yc5jDs8E6peA6js8EEub94OF9T.jpg");
         }
+        .content{
+            height: 50px;
+        }
         .navinfo{
             margin: 20px;
-            display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            height: 0 auto;
         }
         ul {
             list-style-type: none;
@@ -40,164 +43,126 @@
         li a:hover {
             background-color: #111;
         }
-
-        #z{
-            padding: 10px;
-            border-radius: 7px;
-            background-color: darkslategray;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-        #x{
-            padding: 15px;
-            height: 50px;
-            background-color:darkslateblue
-        }
-
+        
         h1{
-            color: white;
-            font-size: xx-large;
+            font-size: 70;
+            font-weight: bold;
+            text-align: center;
         }
-
-        .container{
+        p{
+            color: white;
+            padding: 5px;
+        }
+        .main-container{
             display: flex;
             flex-direction: row;
-            flex-direction: column;
+        }
+        .container1{
             gap: 10px;
-            padding: 15px;
-            justify-content: start;
-            width: 50%;
+            padding: 10px;
+            width: 48%;
+            margin: 20px;
+            height: 300px;
+            border-radius: 7px;
+            background-image: url(" https://i.pinimg.com/736x/6a/14/14/6a141411467345cc69232b06c277cb34.jpg");
+            background-image: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .content-header{
+            margin: 0 auto;
+        }
+        
+        .mini-contents{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            border: 3px white;
+            margin: 20px;
+            padding 10px;
+            background-color: #112340;
+            gap: 20px;
+            padding: 10px;
+            width: 45%;
+        }
+        
+        .container2{
+            background-color: black;
+            margin: 20px;
+            height: 600px;
+            align-self: end;
+            border-radius: 7px;
+            width: 46.5%;
             display: grid;
+            grid-column: 2/3;
+            
         }
-
-        .box1{
-            background-color: #333;
-            grid-column-start: 1;
-            grid-column-end: 3;
+        img{
+            height: 175px;
+            width: 225px;
         }
-        .box-a{
-            color: white;
+        .n{
+            font-weight: bold;
+            font-size: 25;
+            text-align: center;
         }
-        .box-b{
-            color: white;
+        
+        #c{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
         }
-
-
-        .box2{
-            background-color:#333;
-        }
-        .box-c{
-            color: white
-        }
-        .box-d{
-            color: white
-        }
-
-
-        .box3{
-            background-color:#333;
-        }
-        .box-e{
-            color: white;
-        }
-        .box-f{
-            color: white;
-        }
-
-
-        .box4{
-            background-color:#333;
-        }
-        .box-g{
-            color: white;
-        }
-        .box-h{
-            color: white;
-        }
-
-
-        .box5{
-            background-color:#333;
-        }
-        .box-i{
-            color: white;
-        }
-        .box-j{
-            color: white;
-        }
-
-        @media( max-width: 700px){
-
-        }
-
-        @media( max-width: 400px){
-
-        }
-
+        
+        
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <nav> 
         <div class="navinfo">
-            <img src=" ">
-        <h1> World of Tanks </h1>
+        <div class="title"> 
+        <p class="n"> WORLD OF TANKS </p> 
+        </div> 
+        </div>
         <ul class="content">
-            <li> <a href="#"> Link 1</a> </li>
-            <li> <a href="#"> Link 2</a> </li>
-            <li> <a href="#"> Link 3</a> </li>
-            <li> <a href="#"> Link 4</a> </li>
+            <li> <a href="#"> Home </a> </li>
+            <li> <a href="#"> Tanks </a> </li>
+            <li> <a href="#"> History </a> </li>
+            <li> <a href="#"> About Us </a> </li>
         </ul>
-    </div>
     </nav>
-<div class="container">
-    <div class="box1" id="z"> 
-        <div class="box-a" id="x">
-            <p> Sample Content </p>
+<div class="main-container">
+    <div class="A" id="c">
+        <div class="container1"> 
         </div>
-        <div class="box-b" id="x">
-            <p> Sample Content </p>
+        
+        <div class="mini-contents"> 
+        
+        <div class="a" id="i"> 
+        <img src="https://www.globalautotransportation.com/wp-content/uploads/2020/01/42613957591_5ba5aff36e_w.jpg">
+        <p> <b> AMERICAN </b></p>
+        <p> The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers.</p>
         </div>
-    </div>
-    <div class="box2" id="z">
-        <div class="box-c" id="x">
-            <p> Sample Content</p>
+        
+        <div class="b" id="i"> 
+        <img src="https://i.redd.it/1o0zfsqdh15a1.jpg ">
+        <p> <b>RUSSIAN</b> </p>
+        <p> The T-34 is a Soviet medium tank from World War II. When introduced, its 76.2 mm tank gun was more powerful than many of its contemporaries, and its 60-degree sloped armour provided good protection against anti-tank weapons.</p>
         </div>
-        <div class="box-d" id="x">
-            <p> Sample Content</p>
+        
+        <div class="c" id="i"> 
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uAZ_n0IbJLQ61CJFOsW63TyMREyOKt61WQ&s">
+        <p> <b> GERMAN  </b></p>
+        <p> The Tiger I was a German heavy tank of World War II that began operational duty in 1942 in Africa and in the Soviet Union, usually in independent heavy tank battalions. It gave the German Army its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun. 1,347 were built between August 1942 and August 1944. </p>
         </div>
-    </div>
-    <div class="box3" id="z">
-        <div class="box-e" id="x">
-            <p> Sample Content </p>
-        </div>
-        <div class="box-f" id="x">
-            <p> Sample Content </p>
-        </div>
-    </div>
-    <div class="box4" id="z">
-        <div class="box-g" id="x">
-            <p> Sample Content</p>
-        </div>
-        <div class="box-h" id="x"> 
-            <p> Sample Content</p>
         </div>
     </div>
-    <div class="box5" id="z">
-        <div class="box-i" id="x">
-            <p> Sample Content </p>
+    <div class="B" id="c">
+        <div class="container2">
+            <div class=" "> 
+            
+            </div>
         </div>
-        <div class="box-j" id="x">
-            <p>Sample Content</p>
-        </div>
-
     </div>
 </div>
-
-<div class="container2">
-    <div class="contents2">
-
-    </div>
-</div>
-</body>
-</html>
+    </body>
+  </html>
