@@ -1,0 +1,927 @@
+<html>
+    
+    <head>
+        <!--CSS-->
+        <style>
+            /*Standard*/
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: 0;
+            }
+            
+            body{
+                background-color: #D3D3D3;
+            }
+            
+            h1{
+                font-family: 'Georgia', serif;
+            }
+            
+            p{
+                font-family: 'Verdana', sans-serif;
+            }
+             
+            /*Navigation_Bar*/
+            .navbar {
+                background-color: #3987a3;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px 0px 20px;
+            }
+            .navbar .logo img {
+                height: 40px;
+                border-radius: 20px;
+            }
+            .name {
+                color: white;
+                margin-left: 10px;
+                flex: 1;
+                border: 1px black;
+            }
+            .navbar a {
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                background-color: #3987a3;
+                font-size: 22;
+            }
+            .navbar a:hover {
+                background-color: #2A3D5D;
+                color: #FFD700;
+            }
+            
+
+            /*Home_Page*/
+            #home{
+                
+            }
+            .1st_page{
+                /*idk*/
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .pic img{
+                margin: 20px;
+                /*border-radius: 200px;*/
+                width: 325px;
+                height: 325px;
+                /*clip-path: polygon(*/
+                /*30% 0%, 70% 0%, */
+                /*100% 30%, 100% 70%, */
+                /*70% 100%, 30% 100%, */
+                /*0% 70%, 0% 30%);*/
+                border-radius: 50px 0px 0px 50px;
+                border: 2px solid black;
+                
+            }
+            .profpic{
+                object-fit: contain; 
+            }
+            .startup-sec{
+                border: 2px solid black;
+                border-radius: 0px 50px 50px 0px;
+                padding: 50px;
+                margin: 20px;
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                background-color: #d1dbe6;
+                height: ;
+            }
+            .p1{
+                font-size: 30;
+                margin-top: 10px;
+                font-family: Courier;
+                font-weight: bold;
+            }
+            .p2{
+                font-size: 20;
+                margin: 15px;
+                letter-spacing: 5px;
+            }
+            .buttons{
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                padding: 7px;
+                padding-top: 20px;
+                text-align: center;
+                width: 400px;
+                border: 2px black solid;
+                border-radius: 0 50px 50px 0;
+                align-items: center;
+                background-color: #3987a3; 
+            }
+            .homebutton{
+                background-color: #d1dbe6;
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                border: 1px solid black;
+                border-radius: 20px;
+                width: 90%;
+            }
+            .homebutton:hover{
+                color: white;
+                background-color: #3987a3; 
+            }
+            .p2_2{
+                font-size: 25;
+                margin-bottom: 10px;
+                font-family: Courier;
+                letter-spacing: 5px;
+                color: white;
+                
+            }
+            
+            /*About_Section*/
+            #about{}
+            .2nd_page{}
+            .row2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                padding: 20px;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                gap: 15px;
+            }
+            .column1{
+                border: 2px solid black;
+                padding: 40px;
+                /*border-radius: 20px;*/
+                border-radius: 0 50px 50px 0;
+                width: 75%;
+                height: 30%;
+                background-color: #d1dbe6;
+            }
+            .about_p{
+                letter-spacing: 3px;
+                font-family: 'Verdana', sans-serif;
+                text-align: justify;
+            }
+            .column2{
+                border: 2px solid black;
+                padding: 40px;
+                border-radius: 50px 0px 0px 50px;
+                width: 75%;
+                height: 30%;
+                background-color: #d1dbe6;
+            }
+            .about_p2{
+                letter-spacing: 3px;
+                font-family: 'Verdana', sans-serif;
+                text-align: justify;
+            }
+            .p3{
+                font-size: 20;
+                margin: 15px;
+                letter-spacing: 5px;
+            }
+            
+            
+            /*Portfolio/Work_Section Par6t 1 & 2*/
+            #W_S{}
+            .3rd_page{}
+            .row3{
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 0 auto;
+                padding: 30px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .a-container{
+                width: 1450px;
+                height: 700px;
+                padding: 5px;
+               
+            }
+            .aced{
+                border: 2px solid black;
+                border-radius: 50px 0px 50px 50px;
+                background-color: #3987a3;
+                width: 1350px;
+                height: 75px;
+                text-align: center;
+                align-content: center;
+                margin: 0 auto;
+                color: white;
+            }
+            .container{
+                /*display: flex;*/
+                /*flex-direction: row;*/
+                /*justify-content: center;*/
+            }
+            .container2nd{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-bottom: 100px;
+                padding-top: 20px;
+                gap: 15px;
+                /*border: 2px solid black;*/
+            }
+            .nullhypothesis{
+                padding-top: 65px;
+                /*border: 2px solid black;*/
+                width: 1425px;
+                height: 750px;
+                padding-left: 10px;
+            }
+            #sizeof{
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 375px;
+                width: 400px;
+                padding: 10px;
+                background-color: #d1dbe6;
+                border: 2px solid black;
+                border-radius: 50px 0px 50px 0px;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            .rad{
+                border-radius: 50px 0px 50px 0px;
+                height: 275px;
+                width: 375px;
+                align-self: center;
+            }
+            
+            
+            #blog_A{}
+            .4th_page{}
+            .row4{
+                
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                padding: 30px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            /*Contact_Information*/
+            #contact{}
+            .5th_page{}
+            .row5{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .desing{
+                border: 2px solid black;
+                /*background-color: #d1dbe6;*/
+                background-color: #3987a3;
+                color: white;
+                width: 1450px;
+                height: 75px;
+                text-align: center;
+                align-content: center;
+                /*border-radius: 20px;*/
+                border-radius: 50px 0px 50px 50px;
+            }
+            .contact{
+                display: flex;
+                flex-direction: row;
+            }
+            #con{
+                border: 2px black solid;
+                margin: 10px;
+                padding: 20px;
+                height: 400px;
+                width: 300px;
+                border-radius: 20px;
+                text-align: center;
+            }
+            .img1{
+                height: 150px;
+                width: 150px;
+            }
+            .goto{
+                width: 150px;
+                height: 50px;
+                background-color: #3987a3;
+                color: white;
+                font-weight: bold;
+                font-size: 20;
+                font-family: 'Verdana', sans-serif;
+                border-radius: 10px;
+            }
+            .goto:hover{
+                background-color: #d1dbe6;
+            }
+            .goto2{
+                width: 150px;
+                height: 50px;
+                background-color: #d1dbe6;
+                font-weight: bold;
+                font-size: 20;
+                font-family: 'Verdana', sans-serif;
+                border-radius: 10px;
+            }
+            .goto2:hover{
+                background-color: #3987a3;
+            }
+            .facebook{
+                background-color: #316FF6;
+            }
+            .messenger{
+                background-color: white;
+            }
+            .pinterest{
+                background-color: #BD081C;
+            }
+            .phone{
+                background-color: #D3D3D3;
+            }
+            /*Testimonials_or_References*/
+            #references{}
+            .6th_page{}
+            .row6{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .reviews{
+                border: 2px black solid;
+                /*border-radius: 20px;*/
+                width: 1300px;
+                height: 75px;
+                background-color: #d1dbe6;
+                text-align: center;
+                align-content: center;
+                margin-left: 100px;
+                margin-top: 20px;
+                border-radius: 50px 0px 50px 50px;
+            }
+            .pipol{
+                /*border: 2px black solid;*/
+                display: flex;
+                flex-direction: row;
+                width: 1500px;
+                padding: 15px;
+            }
+            #peeps{
+                border: 2px solid black;
+                border-radius: 20px;
+                height: 500px;
+                width: 600px;
+                padding: 10px;
+                margin: 20px;
+                text-align: center;
+                background-color: #3987a3;
+                color: white;
+            }
+            .img2{
+                border-radius: 200px;
+                height: 250px;
+                width: 250px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .starating{
+                height: 85px;
+                width: 225px;
+                padding: 0;
+                margin: 0 auto;
+            }
+            /*Services*/
+            #services{}
+            .7th_page{}
+            .row7{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .servcont{
+                 /*border: 2px solid black;*/
+            }
+            .services{
+                border: 2px black solid;
+                width: 1300px;
+                height: 75px;
+                background-color: #d1dbe6;
+                text-align: center;
+                align-content: center;
+                margin-left: 145px;
+                margin-top: 20px;
+                border-radius: 50px 0px 50px 50px;
+            }
+            .servcontainer{
+                border-radius: 20px;
+                height: 725px;
+                width: 800px;
+                width: 1500px;
+                height: 550px;
+                display: flex;
+                flex-direction: row;
+                padding-left: 100px;
+                /*border: 2px solid black;*/
+                padding-top: 20px;
+            }
+            #serv{
+                border: 2px black solid;
+                height: 150px;
+                width: 650px;
+                gap: 20px;
+                border-radius: 20px;
+                margin: 10px;
+                padding-left: 15px;
+                padding-right: 20px;
+                text-align: left;
+                background-color: #3987a3;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .servL{
+                font-size: 20;
+                font-weight: bold;
+                width: 150px;
+            }
+            .servL2{
+                font-size: 20;
+                font-weight: bold;
+                width: 175px;
+            }
+            .img3{
+                border-radius: 30px;
+                height: 100px;
+                width: 100px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .fsec{
+                display:flex;
+                flex-direction: column;
+                /*border: 2px solid black;*/
+            }
+            .ssec{
+                display: flex;
+                flex-direction: column; 
+                /*border: 2px solid black;*/
+            }
+            
+            /*Social_Media_Links*/
+            #SM_Links{}
+            .8th_page{}
+            .row8{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px black solid;
+                margin: 10px;
+                height: 750px;
+                background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/tablet-791051_640.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .quaso{
+                border: 2px black solid;
+                width: 1300px;
+                height: 75px;
+                color: white;
+                background-color: #3987a3;
+                text-align: center;
+                align-content: center;
+                margin: 0 auto;
+                border-radius: 50px 0px 50px 50px;
+            }
+            .comcontain{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            }
+            .box{
+                border: 2px solid black;
+                text-align: center;
+                padding: 20px;
+                width: 600px;
+                height: 500px;
+                border-radius: 50px 0px 0px 50px;
+                background-color: #d1dbe6;
+            }
+            .qna{
+                border: 2px solid black;
+                padding: 20px;
+                width: 600px;
+                height: 500px;
+                text-align: left;
+                justify-content: end;
+                border-radius: 0px 50px 50px 0px;
+                background-color: #d1dbe6;
+            }
+            .label{
+                font-size: 20;
+                font-weight: bold;
+            }
+            .textbox{
+                width: 550px;
+                height: 450px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            .answers{
+                height: 100px;
+                width: 560px;
+                background-color: white;
+                border-radius: 50px 0px 50px 0px;
+                margin-bottom: 10px;
+                border: 2px black solid;
+                padding: 17px;
+            }
+            
+            @media(min-width:700px){
+                
+            }
+            
+        </style>
+    </head>
+    
+    <!--Structure/Layout-->
+    <body>
+        
+        <!--Navigation_Tab-->
+        <nav class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/97/00/cc/9700cc1f59c197c04c3a33e01e66c619.jpg" alt="Logo">
+        </div>
+        <h1 class="name">DAGAR, DANIELLE JOHN S.</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#services">Services</a>
+        <a href="#FAQ">FAQ</a>
+        </nav>
+        <!--Home_Page-->
+        <div class="1st_page" id="home">
+        <div class="row">
+            <div class="pic">
+                <img class="profpic" src="https://i.pinimg.com/474x/82/b2/31/82b23154f54d00b29b305975f5321c2a.jpg" alt="myface">
+            </div>
+            <div class="startup-sec">
+            <div class="1stdesc">
+            <h1> HI, </h1>
+            <p class="p1"> I'm Dagar, Danielle </p>
+            <ul class="p2"> 
+            <li> Web Layout Architect </li>
+            <li> Computer Programmer </li>
+            <li> Ethical Hacker</li>
+            <li> Information Systems Manager </li>
+            </ul>
+            </div>
+            <div class="buttons">
+            <p class="p2_2"> <b> DOWNLOAD CV </b></p>
+            <br> 
+            <button class="homebutton" href=" "> CURRICULUM VITAE </button>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <hr>
+    
+        <!--About_Section-->
+        <div class="2nd_page" id="about">
+        <div class="row2">
+            <div class="column1">
+                <h1> Introduction: </h1>
+                <br>
+                <p class="about_p"> As a multifaceted professional, I excel in various domains of technology. 
+                As a **Web Layout Architect**, I design visually appealing and user-friendly websites, ensuring 
+                seamless navigation and responsiveness. In my role as a **Computer Programmer**, I craft efficient 
+                and robust code, transforming complex requirements into functional software solutions. With a focus 
+                on cybersecurity, I operate as an **Ethical Hacker**, identifying and mitigating vulnerabilities to 
+                protect systems from malicious threats. Additionally, as an **Information Systems Manager**, I 
+                oversee and optimize the technological infrastructure, ensuring data integrity, security, and 
+                optimal performance. My diverse skill set enables me to deliver comprehensive and innovative 
+                solutions in the ever-evolving tech landscape.</p>
+            </div>
+            <div class="column2">
+                <h1> Other Facts: </h1>
+                <br>
+                <p class ="about_p2"> Alumni of FEU Institute of Technology</p>
+                <p class="about_p2"> Graduated with a Bachelors Degree in Information Technology Specializing in Business Analytics</p>
+                <br>
+                <p class="about_p2"> <b> Certifications: </b></p>
+                <ul class= "p3">
+                    <li> Microsoft Certified</li>
+                    <li> Java Certified </li>
+                    <li> Python Certified </li>
+                    <li> HTML Certified</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <hr>
+        
+        <!--Portfolio/Work_Section-->
+        <div class="3rd_page" id="W_S">
+        <div class="row3">
+        <div class="a-container">
+            
+        <div class="nullhypothesis">
+             
+            <div class="aced"> <h1> ACCOMPLISHMENTS </h1> </div>
+            <div class="container2nd"> 
+            <div class="photo1" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/52/a9/eb/52a9eba96cb3fffbfb4df2e817b5e418.jpg"> 
+                <h1> 1st Project </h1>
+                <p> This is my first project which shows an EAS broadcast announcement</p>
+            </div>
+            <div class="photo2" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/9c/0d/ad/9c0dad55c2efbb286fbf43f1c963d10f.jpg">
+                <h1> 2nd Project </h1>
+                <p> This is my second project which uses deprecated HTML elements for editing</p>
+            </div>
+            <div class="photo3" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/6e/d1/81/6ed181949c0c5d68bc83917b8a385ba1.jpg">
+                <h1> 3rd Project </h1>
+                <p> This is my third project, my first project using interactive elements </p>
+            </div>
+            </div>
+            
+        </div> 
+        
+        </div>
+        </div>
+        </div>
+        
+        <hr>
+        
+        <!--Portfolio/Work_Section no.2-->
+        <div class="4th-page" id="blog_A">
+        <div class="row4">
+        <div class="a-container"> 
+        
+        <div class="nullhypothesis"> 
+        
+            <div class="aced"> <h1> ACCOMPLISHMENTS </h1> </div>
+            <div class="container2nd">
+            <div class="photo4" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/65/8e/51/658e51dfda046fe4e89a9666a942d3eb.jpg"> 
+                <h1> 4th Project </h1>
+                <p> An introduction to using is CSS with grids</p>
+            </div>
+            <div class="photo5" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/44/2f/e9/442fe9f9866fe5bd84c78d0120fbbdf5.jpg">
+                <h1> 5th Project </h1>
+                <p> Making a website interface using nav and linking web pages in HTML</p>
+            </div>
+            <div class="photo6" id="sizeof">
+                <img class="rad" src=" https://i.pinimg.com/736x/b3/bf/80/b3bf80fe0475aafa00a2127f8902fd6c.jpg">
+                <h1> 6th Project </h1>
+                <p> Project using CSS & JavaScript </p>
+            </div>
+            </div>
+            
+        </div>
+        
+        </div> 
+        </div>
+        </div>
+        
+        <hr>
+        
+        <!--Contact_Information-->
+        <div class="5th_page" id="contact">
+        <div class="row5">
+            <div>
+            <div class="desing"> <h1> CONTACTS </h1></div>
+            <br> 
+            <div class="contact">
+                <div class="facebook" id="con">
+                    <div> <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"> </div>
+                    <br> 
+                    <h1> Facebook </h1>
+                    <br> <br> 
+                    <button class="goto"> VISIT </button>
+                </div>
+                <div class="messenger" id="con">
+                    <div> <img class="img1" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/640px-Facebook_Messenger_logo_2020.svg.png"> </div>
+                    <br> 
+                    <h1> Messenger </h1>
+                    <br> <br> 
+                    <button class="goto"> VISIT </button>
+                </div>
+                <div class="pinterest" id="con">
+                    <div> <img class="img1" src=" https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png?20160129083321"> </div>
+                    <br> 
+                    <h1> Pinterest </h1>
+                    <br> <br> 
+                    <button class="goto"> VISIT </button>
+                </div>
+                <div class="phone" id="con">
+                    <div> <img class="img1" src=" https://static.vecteezy.com/system/resources/thumbnails/018/726/054/small_2x/accept-phone-icon-social-icon-set-png.png"> </div>
+                    <br> 
+                    <h1> Phone </h1>
+                    <br> <br> 
+                    <button class="goto"> VISIT </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div> 
+        <hr>
+        
+        <!--Testimonials_or_References-->
+        <div class="6th_page" id="reviews">
+        <div class="row6">
+            <div>
+            <div class="reviews"> <h1> REVIEWS </h1> </div>
+            <div class="pipol">
+                <div class="johnxina" id="peeps">
+                    <img class="img2" src=" https://i.pinimg.com/564x/98/6d/57/986d577a1331822b3b1237ea6f0e2a85.jpg"> 
+                    <h1> Xong Xina </h1>
+                    <img class="starating" src=" https://static.vecteezy.com/system/resources/thumbnails/020/696/313/small/3d-minimal-lighting-star-customer-satisfaction-concept-customer-feedback-service-quality-standard-a-service-evaluation-glowing-5-stars-3d-illustration-free-png.png">
+                    <br> 
+                    <p> Very Good!!! +1000000 Social Credits!!! </p>
+                </div>
+                
+                <div class="mrincredible" id="peeps">
+                    <img class="img2" src=" https://i.pinimg.com/564x/bc/a6/f0/bca6f050d4be2e7e045041400679cc9a.jpg"> 
+                    <h1> Mr. Stonks </h1>
+                    <img class="starating" src=" https://static.vecteezy.com/system/resources/thumbnails/020/696/313/small/3d-minimal-lighting-star-customer-satisfaction-concept-customer-feedback-service-quality-standard-a-service-evaluation-glowing-5-stars-3d-illustration-free-png.png">
+                    <br> 
+                    <p> bisness went ultra stonkss </p>
+                </div>
+                <div class="gigachad" id="peeps">
+                    <img class="img2" src=" https://i.pinimg.com/564x/d4/36/ba/d436bae8fa33079d14e74b2213c0183a.jpg"> 
+                    <h1> Giga Chad </h1>
+                    <img class="starating" src=" https://static.vecteezy.com/system/resources/thumbnails/020/696/313/small/3d-minimal-lighting-star-customer-satisfaction-concept-customer-feedback-service-quality-standard-a-service-evaluation-glowing-5-stars-3d-illustration-free-png.png">
+                    <br> 
+                    <p> Grind hard</p>
+                </div>
+                
+                <div class="rickastley" id="peeps">
+                    <img class="img2" src=" https://i.pinimg.com/564x/6c/32/46/6c3246b1ff493608d743fd855c97cbb4.jpg">
+                    <h1> Rick Astley </h1>
+                    <img class="starating" src=" https://static.vecteezy.com/system/resources/thumbnails/020/696/313/small/3d-minimal-lighting-star-customer-satisfaction-concept-customer-feedback-service-quality-standard-a-service-evaluation-glowing-5-stars-3d-illustration-free-png.png">
+                    <br> 
+                    <p> Never gonna give you up, never gonna let you down. </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <hr>
+        
+        <!--Services-->
+        <div class="7th_page" id="services">
+        <div class="row7">
+            <div class="servcont">
+                <div class="services"> <h1> SERVICES </h1> </div>
+            <div class="servcontainer">
+                
+                <div class="fsec">
+                <div class="serv1" id="serv">
+                    <img class="img3" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV9At7PsYxAq2eUPWUY1_Bm2Qs0YzqHiVIw&s">
+                    <p class="servL"> WEB LAYOUTING </p>
+                    <p> </p>
+                  
+                    <p> AVAIL SERVICE </p>
+                    <button class="goto2"> AVAIL </button>
+                </div>
+                <div class="serv2" id="serv">
+                    <img class="img3" src=" https://i.pinimg.com/236x/3b/4c/41/3b4c41b14d5de925305457608a728d51.jpg ">
+                    <p class="servL"> SOFTWARE ENGINEERING </p>
+                    <p> </p>
+                    <p> AVAIL SERVICE </p>
+                    <button class="goto2"> AVAIL </button>
+                </div>
+                <div class="serv3" id="serv">
+                    <img class="img3" src=" https://i.pinimg.com/564x/2f/ae/2e/2fae2e9b954e069f7347f86abb4e46b4.jpg">
+                    <p class="servL"> ETHICAL HACKING </p>
+                    <p> </p>
+                     
+                    <p> AVAIL SERVICE </p>
+                    <button class="goto2"> AVAIL </button>
+                </div>
+                </div> 
+                
+                <div class="ssec"> 
+                <div class="serv4" id="serv">
+                    <img class="img3" src=" https://i.pinimg.com/236x/2e/14/f0/2e14f004782aabf238b73439e1a2e1c8.jpg">
+                    <p class="servL"> I.S MANAGER </p>
+                    <br> 
+                    <p> </p>
+                 
+                    <p> AVAIL SERVICE </p>
+                    <button class="goto2"> AVAIL </button>
+                </div>
+                <div class="serv5" id="serv">
+                    <img class="img3" src=" https://i.pinimg.com/564x/e4/b8/67/e4b867e21f70cd9bf16b9c6bd933c460.jpg">
+                    <p class="servL2"> COMPUTER PROG. </p>
+                    <p> </p>
+                   
+                    <p> AVAIL SERVICE </p>
+                    <button class="goto2"> AVAIL </button>
+                </div>
+                </div> 
+        </div> 
+        </div>
+        </div> 
+        
+        <hr>
+        
+        <!--FAQ-->
+        <div class="8th_page" id="FAQ">
+        <div class="row8">
+            <div>
+            <div class="quaso"> <h1> QUESTION AND ANSWERS </h1> </div>
+            <br> <br> 
+            
+            <div class="comcontain">
+                
+            <div class="box">
+                <label class="label" for="comment"> ASK A QUESTION/LEAVE A COMMENT: </label><br>
+                <textarea class="textbox" name="comment" id="comment" cols="50" rows="10"></textarea>
+            </div>
+            
+            
+            <div class="qna">
+                <div class="answers">
+                    <p> QUESTION: Are you qualified </p>
+                    <br> 
+                    <p> ANSWER: Sure</p>
+                </div>
+                <div class="answers">
+                    <p> QUESTION: Are you good? </p>
+                    <br> 
+                    <p> ANSWER: Perhaps</p>
+                </div>
+                <div class="answers">
+                    <p> QUESTION: Can you hack into the CIA? </p>
+                    <br> 
+                    <p> ANSWER: Sure</p>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+        </div> 
+        </div>
+        </div>
+        </div> 
+        
+    </body>
+    
+</html>
